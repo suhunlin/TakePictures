@@ -7,9 +7,12 @@ import androidx.core.content.ContextCompat;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
     private String tag = MainActivity.class.getSimpleName();
+    private ImageView img1, img2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +53,15 @@ public class MainActivity extends AppCompatActivity {
         return result;
     }
     private void initCamera(){
+        img1 = findViewById(R.id.lid_Image1);
+        img2 = findViewById(R.id.lid_Image2);
+    }
+
+    public void takePhotoNotSaveToDevice(View view){
+
+    }
+
+    public void takePhotoSaveToDevice(View view){
 
     }
 }
